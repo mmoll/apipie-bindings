@@ -23,7 +23,6 @@ EOF
   s.has_rdoc         = 'yard'
   s.require_paths    = ["lib"]
 
-  s.add_dependency 'json', '>= 1.2.1'
   s.add_dependency 'rest-client', '>= 1.6.5', '< 1.8.0' # lower versions don't allow setting infinite timeouts
                                                         # higher versions changed params in Response object:x
   s.add_dependency 'oauth'
@@ -37,5 +36,5 @@ EOF
   s.add_development_dependency 'mocha'
   s.add_development_dependency 'ci_reporter', '>= 1.6.3', "< 2.0.0"
 
-  s.required_ruby_version = '>= 1.8.7'
+  s.required_ruby_version = '>= 1.9.3'
 end
